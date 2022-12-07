@@ -15,6 +15,10 @@ export default function Home() {
   const apiKeys = [
     "https://api.thingspeak.com/channels/1925037/feeds.json?api_key=KM6AZDKW2IMRZ1JU&results=1",
     "https://api.thingspeak.com/channels/1942989/feeds.json?api_key=28RSVU5VLX7S0XWN&results=1",
+    "null",
+    "null",
+    "null",
+    "null",
   ];
 
   const counterQueries = useQueries({
@@ -45,6 +49,8 @@ export default function Home() {
               title={el.data?.data.channel.name}
               data={el.data?.data.feeds[0].field1}
               isLoading={el.isLoading}
+              index={i}
+              isSingle={i == apiKeys.length - 1}
             />
           ))}
         </div>
