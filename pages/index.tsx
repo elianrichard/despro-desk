@@ -13,12 +13,12 @@ export default function Home() {
   };
 
   const apiKeys = [
-    "https://api.thingspeak.com/channels/1925037/feeds.json?api_key=KM6AZDKW2IMRZ1JU&results=1",
-    "https://api.thingspeak.com/channels/1942989/feeds.json?api_key=28RSVU5VLX7S0XWN&results=1",
-    "null",
-    "null",
-    "null",
-    "null",
+    "https://api.thingspeak.com/channels/1942989/feeds.json?results=1",
+    "https://api.thingspeak.com/channels/1974063/feeds.json?results=1",
+    "https://api.thingspeak.com/channels/1974067/feeds.json?results=1",
+    "https://api.thingspeak.com/channels/1974060/feeds.json?results=1",
+    "https://api.thingspeak.com/channels/1974062/feeds.json?results=1",
+    "https://api.thingspeak.com/channels/1974064/feeds.json?results=1",
   ];
 
   const counterQueries = useQueries({
